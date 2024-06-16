@@ -1,0 +1,51 @@
+*{
+    font-family: 'Lemon', serif;
+}
+body{
+    background-color: silver;
+}
+#buttonContainer{
+    text-align: center;
+}
+#board{
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: auto auto auto auto auto;
+    width: 80%;
+    background-color: rgb(248, 78, 78);
+}
+
+.disabled{
+    opacity: .5;
+    pointer-events: none;
+}
+.card{
+    text-align: center;
+    border: 2px black solid;
+    height: 80px;
+    padding: 5px;
+    font-size: 10px;
+}
+.card:hover{
+    cursor: pointer;
+    background-color: rgb(195, 62, 62);
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-size: 28px;
+}
+#copyright{
+    font-size: 16px;
+}
+button{
+    width: 100px;
+    height: 30px;
+}
+@media (max-width: 670px){
+    .card{
+        font-size: 6px;
+    }
+}
